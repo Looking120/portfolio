@@ -59,10 +59,17 @@
   --title-color-dark: hsl(var(--hue), var(--set), 0%);
   --body-color: hsl(var(--hue), var(--set), 98%);
   --text-color: hsl(var(--hue), var(--set), 46%);
-  --container-color: #fff;
+  --container-color: #e2dddd;
+  --title-color-orange: hsl(30, var(--set), 20%);
+  --title-color-red: hsl(var(--hue), var(--set), 20%);
+  --title-color-pink: hsl(330, var(--set), 20%);
+  --title-color-blue: hsl(240, var(--set), 20%);
+
+
+
 
   /*------ Font and typography ----------*/
-  --body-font:"Montserrat", sans-serif;
+  --body-font: "Montserrat", sans-serif;
 
   --big-font-size: 3.5rem;
   --h1-font-size: 2.25rem;
@@ -116,18 +123,18 @@
   padding: 6rem 0 2rem;
 }
 
-.section__title{
+.section-title{
   display: block;
   font-size: var(--small-font-size);
   color: var(--title-color);
 }
-.section__subtitle{
+.section-subtitle{
   display: block;
   font-size: var(--normal-font-size);
   margin-bottom: 4rem;
 }
 
-.section__title, .section__subtitle{
+.section-title, .section-subtitle{
   text-align: center;
 }
 
@@ -156,10 +163,10 @@
 .button:hover{
   background-color: var(--title-color-dark);
 }
-.button__icon {
+.button-icon {
   margin-left: var(--mb-0-5);
 }
-.button--flex{
+.button-flex{
   display: inline-block;
   align-items: center;
 }
