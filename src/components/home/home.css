@@ -1,0 +1,76 @@
+.home-contain {
+    grid-template-columns: 116px repeat(2, 1fr);
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+    align-items: center;
+}
+.social-section{
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+.social-icon{
+    font-size: 1.25rem;
+    color: var(--title-color);
+}
+.social-icon:hover{
+    color: var(--title-color-dark);
+}
+
+.home-title{
+    font-size: var(--big-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+
+.subtitle{
+    position: relative;
+    padding-left: 5.4rem;
+    font-size: var(--h3-fon-size);
+    font-weight: var(--font-normal);
+    margin-bottom: var(--nb-1);
+}
+
+.subtitle::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 1px;
+    background-color: var(--text-color);
+    top: 1rem;
+}
+
+.description{
+    max-width: 400px;
+    margin-bottom: var(--mb-3);
+}
+.img-home{
+    background: url(../../assets/profile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 0 0 0 9px rgba(20, 18, 18, 0.3);
+    background-size: cover;
+    order: 1;
+    justify-self: center;
+    width: 300px;
+    height: 300px;
+    animation: profileAnimation 10s ease-in-out infinite 2s;
+}
+
+@keyframes profileAnimation {
+    0% {
+        border-radius: 50% 50% 50% 50%; /* Cercle */
+    }
+    25% {
+        border-radius: 30% 70% 70% 30%; /* Forme ovale */
+    }
+    50% {
+        border-radius: 60% 40% 70% 30%; /* Forme personnalisée */
+    }
+    75% {
+        border-radius: 70% 30% 40% 60%; /* Autre forme personnalisée */
+    }
+    100% {
+        border-radius: 50% 50% 50% 50%; /* Retour au cercle */
+    }
+}
