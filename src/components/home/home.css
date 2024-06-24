@@ -2,12 +2,19 @@
     row-gap: 5rem;
 }
 
+/* Base styles for home container */
 .home-contain {
     display: grid;
     grid-template-columns: 116px repeat(2, 1fr);
     padding-top: 5.5rem;
     column-gap: 2rem;
     align-items: center;
+}
+
+/* General grid styles with a gap */
+.grid {
+    display: grid;
+    gap: 1.5rem;
 }
 
 .social-section {
