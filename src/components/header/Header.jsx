@@ -13,7 +13,7 @@ const Header = () => {
 
                 <div className={toggle ?  "nav-menu show-menu" : "nav-menu"}>
 
-                    <ul className="nav-list grid">
+                    <ul className="nav-list">
                         <li className="nav-items">
                             <a href="" className="nav-link">
                                 <i className="uil uil-home nav-icons"></i>
