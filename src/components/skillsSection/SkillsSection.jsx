@@ -3,6 +3,9 @@ import React from 'react';
 import "./SkillsSection.css";
 import Frontend from './Frontend';
 import Backend from './Backend';
+import SkillsBasic from './SilollsBasic';
+
+
 
 const SkillsSection = () => {
     return (
@@ -13,8 +16,8 @@ const SkillsSection = () => {
 
             <div className="skills-container container grid ">
                 <Frontend />
+                <SkillsBasic />
                 <Backend />
-        
             </div>
            </div>
         </section>
